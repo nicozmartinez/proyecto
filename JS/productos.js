@@ -1,3 +1,4 @@
+// PRODUCTOS
 const productos = [
   {
     id: "ANF-02",
