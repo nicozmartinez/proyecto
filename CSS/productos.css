@@ -1,43 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+/* VISTA PRINCIPAL */
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+/* ASAIDE */
+.aside-products{
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.menu-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.btn-menu{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.btn-menu:hover{
+    color: #000a;
+}
+.selected{
+    color: #3498db;
+}
+
+
+/* PRODUCTOS */
+.title-main-products{
+    padding: 2rem;
+}
+.main-products{
+    padding: 2rem;
+}
+
 .products{
-   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* CARD  */
+
+.contenedor-detalle{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 .card_product{
     width: 300px;
-    height: auto;
+    /* height: 450px; */
     background-color: #fff;
-    padding: 20px;
+    border: 1px solid #0002 ;
+    border-radius: 3%;
+    padding: 1rem;
+    transition: box-shadow 0.3s;
+}
+.card_product:hover{
+    box-shadow:  0px 0px 30px #0006;
 }
 .contenedor{
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 .img_product{
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
+    height: 280px;
 }
 .line{
-    border-bottom: 2px solid #0005;
-}
-
-.price_product{
-    padding: 5px;
-    font-size: 1.3em;
-    font-weight: 700;
-
+    border-bottom: 2px solid #0002;
+    margin-bottom: 5%;
 }
 .title_product{
-    padding: 5px;
     font-size: 1.3em;
-    font-weight: 700;
+    font-weight: 100;
+    color: #0005;
 }
+.price_product{
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
 .add_cart{
-    background-color: rgba(188, 206, 251, 0.466);
+    background-color: #3498db;
     font-size: 1.4em;
     border: none;
-    border-radius: 5px;
-    color: rgb(83, 143, 255);
-    padding: 5px 30px;
-    margin-top: 20px;
+    border: 1px solid #3498db;
+    border-radius: 0.3rem;
+    color: #fff;
+
+    padding: 5px 30px; 
     cursor: pointer;
+    transition: background-color 0.2s ;
+}
+.add_cart:hover{
+    background-color: #fff; 
+    color: #3498db;
 }
