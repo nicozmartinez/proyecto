@@ -1,67 +1,292 @@
 const productos = [
   {
-    id: "ANF-01",
-    title: "Anafe eléctrico Clever",
-    image: "../IMG/productos/anafeClaver.webp",
-    categorie: {
-      name: "Anafe",
-      type: "Electrica",
-      id: "cocina",
-    },
-    price: 35000,
-  },
-  {
     id: "ANF-02",
     title: "Anafe eléctrico Clever",
     image: "../IMG/productos/anafeClaver.webp",
     categorie: {
-      name: "Anafe",
+      id: "Cocina",
       type: "Electrica",
-      id: "cocina",
+      name: "Anafe",
     },
-    price: 35000,
+    description: {
+      a: "4 hornallas Vitrocerámicas (165 mm y 200 mm)",
+      b: "Control táctil",
+      c: "9 niveles de potencia para cada hornalla",
+      d: "Bloqueo infantil",
+      e: "Con Indicador de calor residual",
+    },
+    price: 406290,
   },
   {
-    id: "ANF-03",
-    title: "Anafe eléctrico Clever",
-    image: "../IMG/productos/anafeClaver.webp",
+    id: "PDA-01",
+    title: "Purificador de aire Hydra",
+    image: "../IMG/productos/purificadordeaire.webp",
     categorie: {
-      name: "Anafe",
+      id: "Cocina",
       type: "Electrica",
-      id: "cocina",
+      name: "Purificador-de-Aire",
     },
-    price: 35000,
+    description: {
+      a: "Filtro HEPA de alta eficiencia",
+      b: "Modo de funcionamiento silencioso",
+      c: "Diseño compacto y elegante",
+      d: "Indicador de cambio de filtro",
+      e: "Cobertura de hasta 80 metros cuadrados",
+    },
+    price: 174849,
   },
   {
-    id: "ANF-04",
-    title: "Anafe eléctrico Clever",
-    image: "../IMG/productos/anafeClaver.webp",
+    id: "HE-01",
+    title: "Horno eléctrico Clever",
+    image: "../IMG/productos/hornoElectricoClever.webp",
     categorie: {
-      name: "Anafe",
+      id: "Cocina",
       type: "Electrica",
-      id: "cocina",
+      name: "Horno",
     },
-    price: 35000,
+    description: {
+      a: "Capacidad de 60 litros",
+      b: "Función de convección",
+      c: "Temporizador digital",
+      d: "Puerta con doble vidrio templado",
+      e: "Iluminación interior",
+    },
+    price: 732172,
   },
   {
-    id: "ANF-05",
-    title: "Anafe eléctrico Clever",
-    image: "../IMG/productos/anafeClaver.webp",
+    id: "GRF-01",
+    title: "Grifería Pico Fundido",
+    image: "../IMG/productos/griferiaPicoFundido.webp",
     categorie: {
-      name: "Anafe",
-      type: "Electrica",
-      id: "cocina",
+      id: "Cocina",
+      type: "Monocomando",
+      name: "Griferia",
     },
+    description: {
+      a: "Acabado cromado de alta calidad",
+      b: "Manija ergonómica para un fácil manejo",
+      c: "Cartucho cerámico de larga duración",
+      d: "Sistema de ahorro de agua",
+      e: "Instalación fácil y rápida",
+    },
+    price: 60000,
   },
   {
-    id: "ANF-06",
-    title: "Anafe eléctrico Clever",
-    image: "../IMG/productos/anafeClaver.webp",
+    id: "GRF-02",
+    title: "Grifería Pico de Caño",
+    image: "../IMG/productos/griferiaPicoCaño.webp",
     categorie: {
-      name: "Anafe",
-      type: "Electrica",
-      id: "cocina",
+      id: "Cocina",
+      type: "Cierre de compresión",
+      name: "Griferia",
     },
-    price: 35000,
+    description: {
+      a: "Acabado en acero inoxidable",
+      b: "Manija de diseño clásico",
+      c: "Cartucho de cierre cerámico",
+      d: "Fácil instalación",
+      e: "Funcionamiento suave y duradero",
+    },
+    price: 36500,
+  },
+  // BAÑO
+  {
+    id: "BÑR-01",
+    title: "Bañera de Embutir",
+    image: "../IMG/productos/bañeraEmbutir.webp",
+    categorie: {
+      id: "Baño",
+      type: "Monocomando",
+      name: "Griferia",
+    },
+    description: {
+      a: "Fabricada en acrílico reforzado",
+      b: "Diseño de embutir para un aspecto elegante",
+      c: "Capacidad para una persona",
+      d: "Incluye desagüe y rebosadero",
+      e: "Fácil instalación",
+    },
+    price: 189400,
+  },
+  {
+    id: "SNT-01",
+    title: "Bidet link",
+    image: "../IMG/productos/bidedLink.webp",
+    categorie: {
+      id: "Baño",
+      type: "con transferencia",
+      name: "Sanitarios",
+    },
+    description: {
+      a: "Diseño compacto y moderno",
+      b: "Con sistema de transferencia de agua",
+      c: "Fabricado con cerámica de alta calidad",
+      d: "Incluye grifería",
+      e: "Fácil de limpiar",
+    },
+    price: 763940,
+  },
+  {
+    id: "SNT-02",
+    title: "Inodoro corto link",
+    image: "../IMG/productos/inoddecLink.webp",
+    categorie: {
+      id: "Baño",
+      type: "Goma",
+      name: "Sanitarios",
+    },
+    description: {
+      a: "Inodoro compacto ideal para espacios pequeños",
+      b: "Asiento de cierre suave incluido",
+      c: "Fabricado con material resistente y duradero",
+      d: "Diseño ergonómico para mayor comodidad",
+      e: "Fácil instalación",
+    },
+    price: 744000,
+  },
+  {
+    id: "GRF-03",
+    title: "Ducha Exterior",
+    image: "../IMG/productos/duchaExterior.webp",
+    categorie: {
+      id: "Baño",
+      type: "Monocomando",
+      name: "Griferia",
+    },
+    description: {
+      a: "Fabricada en acero inoxidable resistente a la corrosión",
+      b: "Diseño elegante y moderno",
+      c: "Regulador de temperatura y caudal de agua",
+      d: "Fácil instalación en exteriores",
+      e: "Incluye cabezal de ducha",
+    },
+    price: 205500,
+  },
+  {
+    id: "TOA-01",
+    title: "Toallero Electrico",
+    image: "../IMG/productos/toalleroElectrico.webp",
+    categorie: {
+      id: "Baño",
+      type: "Electrica",
+      name: "Pared",
+    },
+    description: {
+      a: "Funciona con energía eléctrica",
+      b: "Diseño moderno y elegante",
+      c: "Temperatura ajustable para un secado óptimo",
+      d: "Fácil instalación en la pared",
+      e: "Incluye soportes de montaje",
+    },
+    price: 286000,
+  },
+  {
+    id: "ESP-01",
+    title: "Espejo Inteligente",
+    image: "../IMG/productos/espejoInteligente.webp",
+    categorie: {
+      id: "Baño",
+      type: "Electrica",
+      name: "Pared",
+    },
+    description: {
+      a: "Pantalla táctil integrada para funciones inteligentes",
+      b: "Iluminación LED ajustable",
+      c: "Desempañador automático",
+      d: "Altavoces integrados para reproducción de música",
+      e: "Conexión Bluetooth y Wi-Fi",
+    },
+    price: 549000,
+  },
+  {
+    id: "BÑR-02",
+    title: "Hidromasaje Jacuzzi",
+    image: "../IMG/productos/hidromasajeJacuzzi.webp",
+    categorie: {
+      id: "Baño",
+      type: "Hidromasaje",
+      name: "Bañera",
+    },
+    description: {
+      a: "Sistema de hidromasaje con múltiples jets de agua",
+      b: "Diseño ergonómico para una experiencia de baño relajante",
+      c: "Función de regulación de temperatura del agua",
+      d: "Paneles de control digitales",
+      e: "Incluye sistema de iluminación LED",
+    },
+    price: 749000,
+  },
+  {
+    id: "TOA-02",
+    title: "Toallero Radiador",
+    image: "../IMG/productos/toalleroRadiador.webp",
+    categorie: {
+      id: "Baño",
+      type: "Electrica",
+      name: "Pared",
+    },
+    description: {
+      a: "Funciona como radiador y toallero",
+      b: "Diseño compacto y elegante",
+      c: "Temperatura ajustable para calefacción",
+      d: "Fácil instalación en la pared",
+      e: "Incluye soportes de montaje",
+    },
+    price: 89400,
   },
 ];
+
+const contenedorProducts = document.querySelector("#contenedor-products");
+const btnCategory = document.querySelectorAll(".btn-category");
+const mainTitle = document.querySelector("#mainTitle");
+
+function getProducts(productsSelected) {
+  contenedorProducts.innerHTML = "";
+
+  productsSelected.forEach((product) => {
+    const article = document.createElement("article");
+    article.classList.add("card_product");
+    article.innerHTML = `
+    <a href="./productoSeleccionado.html">
+
+        <div class="contenedor">
+            <img class="img_product" src="${product.image}" alt="${product.title}">
+        </div>
+    </a>
+      <div class="line"></div>
+        <div class="contenedor-detalle">
+            <h2 class="title_product">${product.title}</h2>
+            <p class="price_product">$${product.price}</p>
+            <div class="contenedor">
+                <button class="add_cart" id="${product.id}">Agregar al carrito</button>
+            </div>
+        </div>
+    
+    `;
+    contenedorProducts.append(article);
+  });
+}
+getProducts(productos);
+
+btnCategory.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    btnCategory.forEach((btn) => btn.classList.remove("selected"));
+    e.currentTarget.classList.add("selected");
+
+    if (e.currentTarget.id != "Todos") {
+      const productCategorie = productos.find(
+        (product) => product.categorie.id === e.currentTarget.id
+      );
+      mainTitle.innerText = productCategorie.categorie.id;
+
+      const productSelect = productos.filter(
+        (product) => product.categorie.id === e.currentTarget.id
+      );
+
+      getProducts(productSelect);
+    } else {
+      mainTitle.innerText = "Todos nuestros productos";
+      getProducts(productos);
+    }
+  });
+});

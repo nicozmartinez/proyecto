@@ -8,29 +8,32 @@
     <link rel="stylesheet" href="../CSS/layout.css">
     
 </head>
+
 <body>
     <header></header>
-    <main>
-        <h1>La cocina de tus sueños</h1>
-        <section class="products">
-            <article class="card_product">
-               
-                <div class="contenedor line">
-                    <img class="img_product" src="../IMG/productos/anafeClaver.webp" alt="Anafe eléctrico Clever">
-                </div>
-               
-                <div class="contenedor ">
-                    <h2 class="title_product">Anafe eléctrico Clever</h2>
-                </div>
-                <div class="contenedor_price">
-                    <p class="price_product">$35000</p>
-                </div>
-                <div class="contenedor">
-                    <button class="add_cart">Agregar al carrito</button>
-                </div>
-            </article>
+    <h1 id="mainTitle" class="title-main-products">Todos nuestros productos</h1>
+    <div class="contenido">
+    <aside class="aside-products">
+        <nav>
+            <ul class="menu-aside">
+                <li>
+                    <button id="Todos" class="btn-menu btn-category selected">Todo</button>
+                </li>
+                <li>
+                    <button id="Cocina" class="btn-menu btn-category">Cocina</button>
+                </li>
+                <li>
+                    <button id="Baño" class="btn-menu btn-category">Baño</button>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-products">
+        <section id="contenedor-products" class="products">
+
         </section>
     </main>
+</div>
     <script src="../JS/productos.js"></script>
 </body>
 </html>
