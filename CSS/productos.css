@@ -6,12 +6,27 @@
 li{
     list-style: none;
 }
+
+
+
 /* VISTA PRINCIPAL */
+
+
+
+
 .contenido{
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
+
+
+
+
 /* ASAIDE */
+
+
+
+
 .aside-products{
     padding: 2rem;
     position: sticky;
@@ -43,20 +58,36 @@ li{
 
 
 /* PRODUCTOS */
+
+
+
 .title-main-products{
     padding: 2rem;
 }
 .main-products{
-    padding: 2rem;
+    /* padding: 2rem; */
+    display: flex;
+    justify-content: center;
 }
 
 .products{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+  
+}
+.header-products, .close-filter{
+    display: none;
 }
 
+
+
+
 /* CARD  */
+
+
+
+
 
 .contenedor-detalle{
     display: flex;
@@ -113,4 +144,90 @@ li{
 .add_cart:hover{
     background-color: #fff; 
     color: #3498db;
+}
+
+
+
+
+
+
+/* QUERYS */
+
+
+
+
+
+@media screen and (max-width: 1720px) {
+    .products{
+        grid-template-columns: repeat(3, 1fr) ;
+        gap: 1rem
+    }
+
+}
+@media screen and (max-width: 1320px) {
+    .products{
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: 1rem
+    }
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+    .contenido{
+        grid-template-columns: 1fr;
+    }
+    .aside-products{
+        position: fixed;
+        z-index: 9;
+        background-color: #fff;
+        box-shadow: 0 0 0 100vmax #0005;
+        left: 0;
+        padding: 4rem;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+    }
+    .open-aside{
+        transform: translate(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    .products{
+        grid-template-columns: 1fr ;
+        gap: 1rem
+    }
+    .header-products{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-filter{
+        background-color: transparent;
+        
+       
+    }
+    .open-filter, .close-filter{
+        background-color: transparent;
+        border: 0;
+        /* color: #3498db; */
+        color: #000c;
+        cursor: pointer;
+        
+    }
+    .no-mobile{
+        display: none;
+    }
+    .close-filter{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .title-main-products{
+        padding: 2rem 1rem;
+    }
+  
 }
