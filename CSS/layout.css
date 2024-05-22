@@ -9,31 +9,23 @@ body {
     color: #000;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-}
-/* 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.header-layout {
+    /* margin-bottom: 20px; */
+    background-color: black ;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.header-layout  .navbar-brand {
+    font-weight: bold;
+    color: white !important;
 }
 
-main {
-    padding: 20px;
-} */
-
+.header-layout .navbar-nav .nav-link {
+    color: white !important;
+}
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
