@@ -18,6 +18,10 @@ li{
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
+.footer-productos{
+    position: relative;
+    margin-top: 1rem;
+}
 
 
 
