@@ -1,4 +1,10 @@
 .body--no-scroll { overflow: hidden; }
+.active-carrito{
+display: none;
+}
+.desactive-carrito{
+    display: block;
+}
 .menu-carrito {
     width: 100%;
     height: calc(100vh - 56px);
