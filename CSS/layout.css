@@ -4,14 +4,14 @@
     padding: 0;
 }
 body {
-
+    /* position: relative; */
     background-color: #ecf0f1;
     color: #000;
 }
 
 .header-layout {
     /* margin-bottom: 20px; */
-    background-color: black ;
+    background-color: #181819;
 }
 
 .header-layout  .navbar-brand {
@@ -22,7 +22,19 @@ body {
 .header-layout .navbar-nav .nav-link {
     color: white !important;
 }
-footer {
+button { border: none !important; }
+button:focus { outline: none !important; }
+
+.carrito-container {
+    width: 100px;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.main, .footer { position: relative; }
+.footer {
     background-color: black;
     color: white;
     padding: 10px 0;

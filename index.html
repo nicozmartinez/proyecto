@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Principal</title>
-    <link rel="stylesheet" href="/proyecto/CSS/INDEX.CSS">
-    <link rel="stylesheet" href="/proyecto/CSS/layout.css">
+    <link rel="stylesheet" href="./css/INDEX.CSS" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <!-- <link rel="stylesheet" href="./CSS/carrito.css" /> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+  </head>
+
+  <body>
     <header class="header-layout">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html">Mi Tienda</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/proyecto/index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/proyecto/HTML/productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/proyecto/HTML/carrito.html">Carrito</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/proyecto/HTML/nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/proyecto/HTML/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Mi Tienda</a>
+        <div class="carrito-container">
+          <svg
+            class="icon-inline icon-1x svg-icon-secondary pr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            width="30"
+            height="30"
+            fill="#3498db"
+          >
+            <path
+              d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z"
+            ></path>
+          </svg>
+          <span>Carrito</span>
+          <span id="contador-productos">0</span>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     
 
@@ -34,11 +67,11 @@
 
     <section class="section-desplazable">
         <div class="slider-imagenes">
-                <img src="/proyecto/IMG/carrousel-index/desplazable1.jpg">
+                <img src="./IMG/carrousel-index/desplazable1.jpg">
                 <h2>imagen 1</h2>
-                <img src="/proyecto/IMG/carrousel-index/desplazable2.jpg">
+                <img src="./IMG/carrousel-index/desplazable2.jpg">
                 <h2>imagen 2</h2>
-                <img src="/proyecto/IMG/carrousel-index/desplazable3.jpg">
+                <img src="./IMG/carrousel-index/desplazable3.jpg">
                 <h2>imagen 3</h2>
                 <button class="anterior">&#10094;</button>
                 <button class="siguiente">&#10095;</button>
@@ -58,7 +91,9 @@
 
 
 
-    <section>
+   
+    <main class="main">
+      <section>
         <h2 class="text-center my-4">Productos Destacados</h2>
         <div id="productosCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -67,17 +102,17 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <img class="d-block w-100"
-                                    src="/proyecto/IMG/productos/anafeClaver.webp"
+                                    src="./IMG/productos/anafeClaver.webp"
                                     alt="Producto 1">
                             </div>
                             <div class="col-md-4">
                                 <img class="d-block w-100"
-                                    src="/proyecto/IMG/productos/espejoInteligente.webp"
+                                    src="./IMG/productos/espejoInteligente.webp"
                                     alt="Producto 2">
                             </div>
                             <div class="col-md-4">
                                 <img class="d-block w-100"
-                                    src="/proyecto/IMG/productos/bidedLink.webp"
+                                    src="./IMG/productos/bidedLink.webp"
                                     alt="Producto 3">
                             </div>
                         </div>
@@ -88,17 +123,17 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <img class="d-block w-100"
-                                    src="/proyecto/IMG/productos/bañeraEmbutir.webp"
+                                    src="./IMG/productos/bañeraEmbutir.webp"
                                     alt="Producto 4">
                             </div>
                             <div class="col-md-4">
                                 <img class="d-block w-100"
-                                    src="/proyecto/IMG/productos/griferiaPicoCaño.webp"
+                                    src="./IMG/productos/griferiaPicoCaño.webp"
                                     alt="Producto 5">
                             </div>
                             <div class="col-md-4">
                                 <img class="d-block w-100"
-                                    src="/proyecto/IMG/productos/duchaExterior.webp"
+                                    src="./IMG/productos/duchaExterior.webp"
                                     alt="Producto 1">
                             </div>
                         </div>
@@ -113,83 +148,156 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Siguiente</span>
             </a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      class="d-block w-100"
+                      src="./IMG/productos/anafeClaver.webp"
+                      alt="Producto 1"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="d-block w-100"
+                      src="./IMG/productos/espejoInteligente.webp"
+                      alt="Producto 2"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="d-block w-100"
+                      src="./IMG/productos/bidedLink.webp"
+                      alt="Producto 3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      class="d-block w-100"
+                      src="./IMG/productos/bañeraEmbutir.webp"
+                      alt="Producto 4"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="d-block w-100"
+                      src="./IMG/productos/griferiaPicoCaño.webp"
+                      alt="Producto 5"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      class="d-block w-100"
+                      src="./IMG/productos/duchaExterior.webp"
+                      alt="Producto 1"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#productosCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#productosCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
         </div>
     </section>
     <!--  
     <section>
+      </section>
+      <section>
         <h2 class="text-center my-4">Sobre Nosotros</h2>
         <p class="text-center">Somos una empresa dedicada a la venta de Sanitarios y materiales para la construcción que
             se encuentra en el rubro desde 2016, no dudes en consultarnos sobre asesoramiento para la construcción de tu
             casa!</p>
     </section>
     LO COMENTÉ PORQUE ARRIBA YA ESTA HECHO, BORRAR SI ES NECESARIO--> 
+<div class="contenedor-info-index">
+  <section class="informacion-index">
+      <div class="columna-navegacion">
+          <h3>Navegación</h3>
+          <ul>
+              <li><a href="#">Categorías</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Política de Devolución</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+          </ul>
+      </div>
+      <div class="columna-envio">
+          <h3>Medios de envío</h3>
+          <ul>
+              <li><a href="#">Correo Argentino</a></li>
+              <li><a href="#">Andreani</a></li>
+          </ul>
+      </div>
+      <div class="columna-redes">
+          <h3>Redes Sociales</h3>
+          <ul class="redes-sociales">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+      </div>
+      <div class="columna-contacto">
+          <h3>Contacto</h3>
+          <ul>
+              <li>api_2682</li>
+              <li>5492345400994</li>
+              <li>+54 9 2345 400994</li>
+              <li>info@total25.com.ar</li>
+              <li>Calle 277 nro 1254, , Provincia de Buenos Aires</li>
+          </ul>
+      </div>
+  </section>
+</div>
 
-    <section class="informacion-index">
-        <div class="columna-navegacion">
-            <h3>Navegación</h3>
-            <ul>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Política de Devolución</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-            </ul>
-        </div>
-        <div class="columna-envio">
-            <h3>Medios de envío</h3>
-            <ul>
-                <li><a href="#">Correo Argentino</a></li>
-                <li><a href="#">Andreani</a></li>
-            </ul>
-        </div>
-        <div class="columna-redes">
-            <h3>Redes Sociales</h3>
-            <ul class="redes-sociales">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-        <div class="columna-contacto">
-            <h3>Contacto</h3>
-            <ul>
-                <li>api_2682</li>
-                <li>5492345400994</li>
-                <li>+54 9 2345 400994</li>
-                <li>info@total25.com.ar</li>
-                <li>Calle 277 nro 1254, , Provincia de Buenos Aires</li>
-            </ul>
-        </div>
-    </section>
 
+        <p class="text-center">
+          Somos una empresa dedicada a la venta de Sanitarios y materiales para
+          la construcción que se encuentra en el rubro desde 2016, no dudes en
+          consultarnos sobre asesoramiento para la construcción de tu casa!
+        </p>
+      </section>
+    </main>
 
-
-    <footer>
-        <p>Contacto: info@mitienda.com</p>
+    <footer class="footer">
+      <p>Contacto: info@mitienda.com</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/proyecto/JS/INDEX.JS"></script>
-    <script src="/proyecto/JS/sectionDesplazable.js"></script>
+    <!-- <script src="/proyecto/JS/INDEX.JS"></script> -->
+    <script src="./JS/sectionDesplazable.js"></script>
 </body>
 
 <script>
-    document.querySelector('.form-contacto').addEventListener('submit', function(event) {
-        const name = document.querySelector('.simple_input[type="text"]').value;
-        const email = document.querySelector('.simple_input[type="email"]').value;
 
-        if (!name) {
-            alert('Por favor, ingrese su nombre.');
-            event.preventDefault();
-        } else if (!email) {
-            alert('Por favor, ingrese su correo electrónico.');
-            event.preventDefault();
-        } else if (!email.includes('@')) {
-            alert('Por favor, ingrese un correo electrónico válido.');
-            event.preventDefault();
-        }
-    });
 </script>
+    <script src="./JS/index.js"></script>
+    <!-- <script src="./JS/carrito.js"></script> -->
+  </body>
 </html>

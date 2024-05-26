@@ -25,9 +25,10 @@ body, html {
     height: 100%;
 }
 
+
 .slider-imagenes img {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     
     position: absolute;
@@ -69,14 +70,15 @@ button.siguiente {
 }
 
 
-
-
 .informacion-index{
-    width: 70vh;
-    height: 70vh;
-    display: flex;
-    padding: 0; 
+    /* width: 70vh; */
+    /* height: 70vh; */
+    /* display: flex; */
+    padding: 5rem 0rem ;  
     text-align:center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 10rem
     
 }
 
@@ -84,9 +86,21 @@ button.siguiente {
 .columna-envio,
 .columna-redes,
 .columna-contacto{
-    align-self: flex-end;
-    margin: 10%;
-    
+    align-self: flex-end;    
+}
+@media screen and (max-width: 1320px) {
+    .informacion-index{
+        
+        gap: 5rem
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .informacion-index{
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: 2rem
+    }
+
 }
 
 

@@ -257,7 +257,7 @@ function getProducts(productsSelected) {
       <div class="line"></div>
         <div class="contenedor-detalle">
             <h2 class="title_product">${product.title}</h2>
-            <p class="price_product">$${product.price}</p>
+            <p class="price_product">$${product.price.toLocaleString('es-AR')}</p>
             <div class="contenedor">
                 <button class="add_cart" id="${product.id}">Agregar al carrito</button>
             </div>
