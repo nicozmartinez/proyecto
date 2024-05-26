@@ -6,14 +6,14 @@
     <title>Página Principal</title>
     <link rel="stylesheet" href="./css/INDEX.CSS" />
     <link rel="stylesheet" href="./CSS/layout.css" />
-    <!-- <link rel="stylesheet" href="./CSS/carrito.css" /> -->
+    <link rel="stylesheet" href="./CSS/carrito.css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="header-layout">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Mi Tienda</a>
+        <a class="navbar-brand" href="./index.html">Mi Tienda</a>
         <div class="carrito-container">
           <svg
             class="icon-inline icon-1x svg-icon-secondary pr-2"
@@ -45,13 +45,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./HTML/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./HTML/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./HTML/contacto.html">Contacto</a>
@@ -60,6 +57,36 @@
         </div>
       </nav>
     </header>
+
+
+    <div class="active-carrito">
+      <div class="menu-carrito">
+        <div class="carrito-header">
+          <button class="cerrar-carrito">
+            <svg
+              class="icon-inline svg-icon-secondary"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              width="20"
+              height="20"
+              fill="#767879"
+            >
+              <path
+                d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+              ></path>
+            </svg>
+          </button>
+          Carrito de Compras
+        </div>
+        <div class="carrito-body">
+          <div class="no-products">El carrito de compras está vacio.</div>
+        </div>
+        <div class="total-container">
+          <h3>Total:</h3>
+          <span class="total">0</span>
+        </div>
+      </div>
+    </div>
     
 
 
@@ -298,6 +325,6 @@
 
 </script>
     <script src="./JS/index.js"></script>
-    <!-- <script src="./JS/carrito.js"></script> -->
+    <script src="./JS/carrito.js"></script>
   </body>
 </html>
