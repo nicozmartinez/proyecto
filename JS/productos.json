@@ -1,0 +1,236 @@
+[
+    {
+        "id": "ANF-02",
+        "title": "Anafe eléctrico Clever",
+        "image": "../IMG/productos/anafeClaver.webp",
+        "categorie": {
+            "id": "Cocina",
+            "type": "Electrica",
+            "name": "Anafe"
+        },
+        "description": {
+            "a": "4 hornallas Vitrocerámicas (165 mm y 200 mm)",
+            "b": "Control táctil",
+            "c": "9 niveles de potencia para cada hornalla",
+            "d": "Bloqueo infantil",
+            "e": "Con Indicador de calor residual"
+        },
+        "price": 406290
+    },
+    {
+        "id": "PDA-01",
+        "title": "Purificador de aire Hydra",
+        "image": "../IMG/productos/purificadordeaire.webp",
+        "categorie": {
+            "id": "Cocina",
+            "type": "Electrica",
+            "name": "Purificador-de-Aire"
+        },
+        "description": {
+            "a": "Filtro HEPA de alta eficiencia",
+            "b": "Modo de funcionamiento silencioso",
+            "c": "Diseño compacto y elegante",
+            "d": "Indicador de cambio de filtro",
+            "e": "Cobertura de hasta 80 metros cuadrados"
+        },
+        "price": 174849
+    },
+    {
+        "id": "HE-01",
+        "title": "Horno eléctrico Clever",
+        "image": "../IMG/productos/hornoElectricoClever.webp",
+        "categorie": {
+            "id": "Cocina",
+            "type": "Electrica",
+            "name": "Horno"
+        },
+        "description": {
+            "a": "Capacidad de 60 litros",
+            "b": "Función de convección",
+            "c": "Temporizador digital",
+            "d": "Puerta con doble vidrio templado",
+            "e": "Iluminación interior"
+        },
+        "price": 732172
+    },
+    {
+        "id": "GRF-01",
+        "title": "Grifería Pico Fundido",
+        "image": "../IMG/productos/griferiaPicoFundido.webp",
+        "categorie": {
+            "id": "Cocina",
+            "type": "Monocomando",
+            "name": "Griferia"
+        },
+        "description": {
+            "a": "Acabado cromado de alta calidad",
+            "b": "Manija ergonómica para un fácil manejo",
+            "c": "Cartucho cerámico de larga duración",
+            "d": "Sistema de ahorro de agua",
+            "e": "Instalación fácil y rápida"
+        },
+        "price": 60000
+    },
+    {
+        "id": "GRF-02",
+        "title": "Grifería Pico de Caño",
+        "image": "../IMG/productos/griferiaPicoCaño.webp",
+        "categorie": {
+            "id": "Cocina",
+            "type": "Cierre de compresión",
+            "name": "Griferia"
+        },
+        "description": {
+            "a": "Acabado en acero inoxidable",
+            "b": "Manija de diseño clásico",
+            "c": "Cartucho de cierre cerámico",
+            "d": "Fácil instalación",
+            "e": "Funcionamiento suave y duradero"
+        },
+        "price": 36500
+    },
+    {
+        "id": "BÑR-01",
+        "title": "Bañera de Embutir",
+        "image": "../IMG/productos/bañeraEmbutir.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "Monocomando",
+            "name": "Griferia"
+        },
+        "description": {
+            "a": "Fabricada en acrílico reforzado",
+            "b": "Diseño de embutir para un aspecto elegante",
+            "c": "Capacidad para una persona",
+            "d": "Incluye desagüe y rebosadero",
+            "e": "Fácil instalación"
+        },
+        "price": 189400
+    },
+    {
+        "id": "SNT-01",
+        "title": "Bidet link",
+        "image": "../IMG/productos/bidedLink.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "con transferencia",
+            "name": "Sanitarios"
+        },
+        "description": {
+            "a": "Diseño compacto y moderno",
+            "b": "Con sistema de transferencia de agua",
+            "c": "Fabricado con cerámica de alta calidad",
+            "d": "Incluye grifería",
+            "e": "Fácil de limpiar"
+        },
+        "price": 763940
+    },
+    {
+        "id": "SNT-02",
+        "title": "Inodoro corto link",
+        "image": "../IMG/productos/inoddecLink.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "Goma",
+            "name": "Sanitarios"
+        },
+        "description": {
+            "a": "Inodoro compacto ideal para espacios pequeños",
+            "b": "Asiento de cierre suave incluido",
+            "c": "Fabricado con material resistente y duradero",
+            "d": "Diseño ergonómico para mayor comodidad",
+            "e": "Fácil instalación"
+        },
+        "price": 744000
+    },
+    {
+        "id": "GRF-03",
+        "title": "Ducha Exterior",
+        "image": "../IMG/productos/duchaExterior.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "Monocomando",
+            "name": "Griferia"
+        },
+        "description": {
+            "a": "Fabricada en acero inoxidable resistente a la corrosión",
+            "b": "Diseño elegante y moderno",
+            "c": "Regulador de temperatura y caudal de agua",
+            "d": "Fácil instalación en exteriores",
+            "e": "Incluye cabezal de ducha"
+        },
+        "price": 205500
+    },
+    {
+        "id": "TOA-01",
+        "title": "Toallero Electrico",
+        "image": "../IMG/productos/toalleroElectrico.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "Electrica",
+            "name": "Pared"
+        },
+        "description": {
+            "a": "Funciona con energía eléctrica",
+            "b": "Diseño moderno y elegante",
+            "c": "Temperatura ajustable para un secado óptimo",
+            "d": "Fácil instalación en la pared",
+            "e": "Incluye soportes de montaje"
+        },
+        "price": 286000
+    },
+    {
+        "id": "ESP-01",
+        "title": "Espejo Inteligente",
+        "image": "../IMG/productos/espejoInteligente.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "Electrica",
+            "name": "Pared"
+        },
+        "description": {
+            "a": "Pantalla táctil integrada para funciones inteligentes",
+            "b": "Iluminación LED ajustable",
+            "c": "Desempañador automático",
+            "d": "Altavoces integrados para reproducción de música",
+            "e": "Conexión Bluetooth y Wi-Fi"
+        },
+        "price": 549000
+    },
+    {
+        "id": "BÑR-02",
+        "title": "Hidromasaje Jacuzzi",
+        "image": "../IMG/productos/hidromasajeJacuzzi.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "Hidromasaje",
+            "name": "Bañera"
+        },
+        "description": {
+            "a": "Sistema de hidromasaje con múltiples jets de agua",
+            "b": "Diseño ergonómico para una experiencia de baño relajante",
+            "c": "Función de regulación de temperatura del agua",
+            "d": "Paneles de control digitales",
+            "e": "Incluye sistema de iluminación LED"
+        },
+        "price": 749000
+    },
+    {
+        "id": "TOA-02",
+        "title": "Toallero Radiador",
+        "image": "../IMG/productos/toalleroRadiador.webp",
+        "categorie": {
+            "id": "Baño",
+            "type": "Electrica",
+            "name": "Pared"
+        },
+        "description": {
+            "a": "Funciona como radiador y toallero",
+            "b": "Diseño compacto y elegante",
+            "c": "Temperatura ajustable para calefacción",
+            "d": "Fácil instalación en la pared",
+            "e": "Incluye soportes de montaje"
+        },
+        "price": 89400
+    }
+]
